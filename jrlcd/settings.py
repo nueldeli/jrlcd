@@ -34,6 +34,8 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'nursery.apps.NurseryConfig',
     'species.apps.SpeciesConfig',
+    'activity.apps.ActivityConfig',
+    'publication.apps.PublicationConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

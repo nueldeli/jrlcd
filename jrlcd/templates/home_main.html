@@ -1,20 +1,61 @@
-{% extends 'base_en.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="descriptions" content="">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Neuton|Work+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+	<!-- End google font -->
+	<!-- Icon -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- End icon -->
+	<link rel="icon" href="{% static 'img/fondfigure_icon.ico' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+	<title>Jelajah Restorasi</title>
+</head>
 
-{% block content %}
-<div class="custom-div">
-	<div class="text-center mb-4">
-		<h3>Pilih bahasa anda</h3>
-		<small>Choose your language</small>
-	</div>
-	<div class="row text-center">
-		<div class="col">
-			<button class="btn btn-custom">Bahasa Malaysia</button>
+<body>
+	<div class="bg-image" style="background-image: url('/static/img/carousel-1.png'); height: 100vh;">
+		<div class="home-main-div">
+		<div class="custom-div">
+			<div class="text-center mb-4" style="color: #fff;">
+				<h1>Pilih bahasa anda</h1>
+				<h3><i>Choose your language</i></h3>
+			</div>
+			<div class="row text-center">
+				<div class="col">
+					<button class="btn btn-custom">Bahasa Malaysia</button>
+				</div>
+				<div class="col">
+					<a href="{% url 'home_en' %}">
+						<button class="btn btn-custom">English</button>
+					</a>
+				</div>
+			</div>
 		</div>
-		<div class="col">
-			<a href="{% url 'home_en' %}">
-				<button class="btn btn-custom">English</button>
-			</a>
-		</div>
 	</div>
-</div>
-{% endblock %}
+	</div>
+	<!--<div class="custom-div">
+		<div class="text-center mb-4">
+			<h3>Pilih bahasa anda</h3>
+			<small>Choose your language</small>
+		</div>
+		<div class="row text-center">
+			<div class="col">
+				<button class="btn btn-custom">Bahasa Malaysia</button>
+			</div>
+			<div class="col">
+				<a href="{% url 'home_en' %}">
+					<button class="btn btn-custom">English</button>
+				</a>
+			</div>
+		</div>
+	</div>-->
+</body>

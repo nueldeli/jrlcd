@@ -111,6 +111,13 @@ a:hover {
 	font-size: 20px;
 }
 
+.home-main-div {
+	height: 30em;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
 .btn-custom {
 	background-color: #ff6600;
 	color: #fff;
@@ -154,6 +161,11 @@ a:hover {
 	background-color: transparent;
 	color: #000;
 	font-size: 12px;
+}
+
+.img-logo-box {
+	align-self: center;
+	margin: 0 10px;
 }
 
 .bounce {

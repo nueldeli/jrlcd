@@ -5,7 +5,7 @@
 	{% for species in object_list %}
 		<h3>{{ species.local_name }}</h3>
 		<img class="w-100" src="{{ species.species_img.url }}">
-		<ul class="list-unstyled">
+		<ul class="list-unstyled mt-4">
 			<li>Local name: {{ species.local_name }}</li>
 			<li>Origin: {{ species.origin }}</li>
 			<li>{{ species.description }}</li>

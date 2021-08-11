@@ -17,12 +17,16 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from .views import HomeMainView, HomeEnView
+from .views import HomeMainView, HomeEnView, AboutView, PartnershipView
 
 urlpatterns = [
     path('', HomeMainView.as_view(), name='home_main'),
     path('home_en/', HomeEnView.as_view(), name='home_en'),
+    path('about/', AboutView.as_view(), name='about'),
+    path('partnership/', PartnershipView.as_view(), name='partnership'),
     path('admin/', admin.site.urls),
     path('nursery/', include('nursery.urls')),
     path('species/', include('species.urls')),
+    #path('activity/', include('activity.urls')),
+    #path('publication/', include('publication.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
