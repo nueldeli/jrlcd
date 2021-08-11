@@ -1,0 +1,20 @@
+{% extends 'base_en.html' %}
+
+{% block content %}
+<div class="custom-div">
+	<div class="text-center mb-4">
+		<h3>Pilih bahasa anda</h3>
+		<small>Choose your language</small>
+	</div>
+	<div class="row text-center">
+		<div class="col">
+			<button class="btn btn-custom">Bahasa Malaysia</button>
+		</div>
+		<div class="col">
+			<a href="{% url 'home_en' %}">
+				<button class="btn btn-custom">English</button>
+			</a>
+		</div>
+	</div>
+</div>
+{% endblock %}

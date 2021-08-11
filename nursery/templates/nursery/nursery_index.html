@@ -1,0 +1,20 @@
+{% extends 'base_en.html' %}
+
+{% block content %}
+<div class="custom-div">
+	{% for nursery in object_list %}
+		<h3>{{ nursery.name }}</h3>
+		<img class="w-100" src="{{ nursery.nursery_img.url }}">
+		
+		<ul class="list-unstyled mt-4"> 
+			<li>Locality: {{ nursery.locality }}</li>
+			<li>Area covered: {{ nursery.area_covered }} ha</li>
+			<li>Capacity: {{ nursery.capacity }}</li>
+			<li>Species: {{ nursery.species }}</li>
+			<li>Total seedlings produced: {{ nursery.total_seedling }}</li>
+			<hr>
+			<li>{{ nursery.description }}</li>
+		</ul>
+	{% endfor %}
+</div>
+{% endblock %}

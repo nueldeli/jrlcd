@@ -1,0 +1,134 @@
+{% extends 'base_en.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="hero-image position-relative">
+	<div class="hero-text text-center">
+		<h1 class="hero-header">Greening Sarawak</h1>
+		<p class="hero-content">Towards greener generation</p>
+		<hr style="background-color: #fff;">
+		<div class="carousel-caption">
+			<i class="fa fa-angle-down bounce"></i>
+		</div>
+	</div>
+</div>
+
+<div class="custom-div mt-4">
+	<h3 class="custom-header text-center">About us</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<div class="text-center">
+		<a href="#">
+			<button class="btn btn-custom">Story time</button>
+		</a>
+	</div>
+</div>
+
+<div class="custom-div">
+	<hr>
+</div>
+
+<div class="custom-div mt-4">
+	<h3 class="custom-header text-center">Our nurseries</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<div class="text-center">
+		<a href="{% url 'nursery_index' %}">
+			<button class="btn btn-custom">Take a walk</button>
+		</a>
+	</div>
+</div>
+
+<div class="custom-div">
+	<hr>
+</div>
+
+<div class="custom-div mt-4">
+	<h3 class="custom-header text-center">Species</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<div class="text-center">
+		<a href="{% url 'species_index' %}">
+			<button class="btn btn-custom">Learn more</button>
+		</a>
+	</div>
+</div>
+
+<div class="custom-div">
+	<hr>
+</div>
+
+<div class="custom-div mt-4">
+	<h3 class="custom-header text-center">Activities</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<div class="text-center">
+		<a href="#">
+			<button class="btn btn-custom">See our progress</button>
+		</a>
+	</div>
+</div>
+
+<div class="custom-div">
+	<hr>
+</div>
+
+<div class="custom-div mt-4">
+	<h3 class="custom-header text-center">Partnership</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<div class="text-center">
+		<a href="#">
+			<button class="btn btn-custom">See who are with us</button>
+		</a>
+	</div>
+</div>
+
+<div class="custom-div">
+	<hr>
+</div>
+
+<div class="custom-div mt-4">
+	<h3 class="custom-header text-center">Publications</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<div class="text-center">
+		<a href="#">
+			<button class="btn btn-custom">See what we've published</button>
+		</a>
+	</div>
+</div>
+
+<div class="custom-div text-center" style="margin-top: 100px;">
+	<img src="{% static 'img/engkabang.png' %}">
+</div>
+
+<div style="height: 100px;">
+	<!--Empty stuff-->
+</div>
+{% endblock %}

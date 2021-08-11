@@ -1,0 +1,164 @@
+/* Global */
+/* Keyframes */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+/* End keyframes */
+
+/* Media query */
+
+@media screen and (max-width:600px){
+	.custom-div {
+		margin: auto;
+		width: 90%
+	}
+}
+
+@media screen and (min-width: 600px){
+	.custom-div {
+		margin: auto;
+		width: 60%;
+	}
+}
+/* End media query */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto Mono', monospace;
+}
+
+li {
+	list-style: none;
+}
+
+nav li {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 16px;
+}
+
+nav a {
+	color: #000;
+}
+
+a:hover {
+	color: #ff6600;
+}
+
+.navbar-custom {
+	background-color: transparent;
+}
+
+.navbar-toggler {
+	border-color: rgba(0,0,0, 1);
+}
+
+.navbar-logo-img {
+	width: 50px;
+}
+
+.hero-image {
+	display: flex;
+	flex-direction: column;
+	background-image: url('/static/img/showcase.png');
+	align-self: center;
+	height: 100%;
+	min-height: 30em;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero-text {
+	width: 300px;
+	height: 200px;
+	text-align: left;
+	color: #fff;
+}
+
+.hero-header {
+	font-family: 'Merriweather', serif;
+	font-weight: bold;
+	align-self: center;
+	font-size: 50px;
+	line-height: 1em;
+
+}
+
+.custom-header {
+	font-family: 'Merriweather', serif;
+	font-weight: bold;
+	align-self: center;
+	font-size: 30px;
+	line-height: 1em;
+	color: #ff6600;
+}
+
+.hero-content {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 20px;
+}
+
+.btn-custom {
+	background-color: #ff6600;
+	color: #fff;
+}
+
+.btn-custom:hover {
+	background-color: #ffa500;
+}
+
+.title-label {
+	color: #000;
+}
+
+.text-label {
+	margin: 0;
+	line-height: 1.2;
+	font-size: 15px;
+}
+
+.text-muted {
+	font-size: 12px;
+}
+
+.text-content img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.hr-line {
+	border: none;
+	height: 2px;
+	background-color: #d3d3d3;
+}
+
+.fa-angle-down {
+	font-size: 60px;
+}
+
+.footer {
+	background-color: transparent;
+	color: #000;
+	font-size: 12px;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+
+}

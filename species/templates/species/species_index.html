@@ -1,0 +1,15 @@
+{% extends 'base_en.html' %}
+
+{% block content %}
+<div class="custom-div mt-4">
+	{% for species in object_list %}
+		<h3>{{ species.local_name }}</h3>
+		<img class="w-100" src="{{ species.species_img.url }}">
+		<ul class="list-unstyled">
+			<li>Local name: {{ species.local_name }}</li>
+			<li>Origin: {{ species.origin }}</li>
+			<li>{{ species.description }}</li>
+		</ul>
+	{% endfor %}
+</div>
+{% endblock %}
