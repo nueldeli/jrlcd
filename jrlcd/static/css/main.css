@@ -56,7 +56,7 @@ a:hover {
 }
 
 .navbar-custom {
-	background-color: transparent;
+	background-color: transparent !important;
 }
 
 .navbar-toggler {
