@@ -1,0 +1,20 @@
+{% extends 'base_en.html' %}
+
+{% block content %}
+<div class="custom-div fade-in mt-4 border rounded shadow p-4">
+	<br>
+	<h3>{{ nursery.name }}</h3>
+	<br>
+	<img class="w-100" src="{{ nursery.nursery_img.url }}">
+	<ul class="list-unstyled">
+		<br>
+		<li>Locality: <strong>{{ nursery.locality }}</strong></li>
+		<li>Area covered: <strong>{{ nursery.area_covered }}</strong> ha</li>
+		<li>Species: <strong>{{ nursery.species }}</strong></li>
+		<li>Capacity: <strong>{{ nursery.capacity }}</strong></li>
+		<li>Total seedling produced: <strong>{{ nursery.total_seedling }}</strong></li>
+		<hr>
+		<li>{{ nursery.description }}</li>
+	</ul>
+</div>
+{% endblock %}

@@ -23,7 +23,7 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-expand-lg navbar-custom mb-4">
+	<nav class="navbar fixed-bottom navbar-expand-lg navbar-custom">
 		<a class="navbar-brand" id="navbar-name" href="">
 			<!--<img class="navbar-logo-img" src="{% static 'img/ad03_logo.png' %}">-->
 		</a>
@@ -32,25 +32,25 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNav">
 
-			<ul class="navbar-nav ml-auto mr-auto mt-4">
+			<ul class="navbar-nav ml-auto mr-auto">
 				<br>
 				<li class="nav-item">
-					<a class="nav-link" href="#">
+					<a class="nav-link" href="{% url 'home_en' %}">
 						<button class="btn btn-custom shadow">Home</button>
 					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">
+					<a class="nav-link" href="{% url 'about' %}">
 						<button class="btn btn-custom shadow">About</button>
 					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">
+					<a class="nav-link" href="{% url 'nursery_index' %}">
 						<button class="btn btn-custom shadow">Nursery</button>
 					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">
+					<a class="nav-link" href="{% url 'species_index' %}">
 						<button class="btn btn-custom shadow">Species</button>
 					</a>
 				</li>
@@ -60,7 +60,7 @@
 					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">
+					<a class="nav-link" href="{% url 'partnership' %}">
 						<button class="btn btn-custom shadow">Partnership</button>
 					</a>
 				</li>

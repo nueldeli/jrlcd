@@ -1,0 +1,18 @@
+{% extends 'base_en.html' %}
+
+{% block content %}
+<div class="custom-div fade-in mt-4 border rounded shadow p-4">
+	<br>
+	<h3>{{ species.local_name }}</h3>
+	<br>
+	<img class="w-100" src="{{ species.species_img.url }}">
+	<ul class="list-unstyled">
+		<br>
+		<li>Scientific name: <strong><i>{{ species.scientific_name }}</i></strong></li>
+		<li>Origin: <strong>{{ species.origin }}</strong></li>
+		<hr>
+		<br>
+		<li>{{ species.description }}</li>
+	</ul>
+</div>
+{% endblock %}

@@ -1,15 +1,19 @@
 {% extends 'base_en.html' %}
 
 {% block content %}
-<div class="custom-div mt-4">
-	{% for species in object_list %}
-		<h3>{{ species.local_name }}</h3>
-		<img class="w-100" src="{{ species.species_img.url }}">
-		<ul class="list-unstyled mt-4">
-			<li>Local name: {{ species.local_name }}</li>
-			<li>Origin: {{ species.origin }}</li>
-			<li>{{ species.description }}</li>
-		</ul>
-	{% endfor %}
+<div class="custom-div fade-in mt-4">
+	<br>
+	<h2 class="custom-header text-center">Species</h2>
+	<hr>
+	<div class="row">
+		{% for species in object_list %}
+		<div class="col-sm-4 border rounded shadow m-2">
+			<a href="{% url 'species_detail' species.pk %}">
+				<img class="w-100 mt-3" src="{{ species.species_img.url }}">
+			<h3>{{ species.local_name }}</h3>
+			</a>
+		</div>
+		{% endfor %}
+	</div>
 </div>
 {% endblock %}
