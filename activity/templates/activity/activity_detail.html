@@ -1,0 +1,16 @@
+{% extends 'base_en.html' %}
+
+{% block content %}
+<div class="custom-div fade-in mt-4 border rounded shadow p-4">
+	<h3>{{ activity.name }}</h3>
+	<br>
+	<img class="w-100" src="{{ activity.activity_img.url }}">
+	<ul class="list-unstyled">
+		<br>
+		<li>Location: <strong>{{ activity.location }}</strong></li>
+		<li>Participant(s): <strong>{{ activity.participant }}</strong></li>
+		<hr>
+		<li>{{ activity.description }}</li>
+	</ul>
+</div>
+{% endblock %}

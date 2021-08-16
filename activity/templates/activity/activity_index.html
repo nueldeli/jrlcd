@@ -1,0 +1,23 @@
+{% extends 'base_en.html' %}
+
+{% block content %}
+<div class="custom-div fade-in mt-4">
+	<br>
+	<h3 class="custom-header text-center">Activities</h3>
+	<hr>
+		<div class="row">
+			{% for activity in object_list %}
+			<div class="col-lg-6 mb4">
+				<div class="activity-div-1 shadow pt-2 pb-2">
+					<a href="{% url 'activity_detail' activity.pk %}">
+						<img class="container-fluid" src="{{ activity.activity_img.url }}">
+						<div class="container activity-div-2">
+							<h4>{{ activity.name }}</h4>
+						</div>
+					</a>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+</div>
+{% endblock %}

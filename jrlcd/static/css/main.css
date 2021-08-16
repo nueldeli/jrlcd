@@ -177,6 +177,19 @@ a:hover {
 	margin: 0 10px;
 }
 
+.activity-div-1 {
+	position: relative;
+	text-align: center;
+}
+
+.activity-div-2 {
+	position: absolute;
+	color: #fff;
+	left: 10px;
+	bottom: 50%;
+	font-size: 20px;
+}
+
 .bounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
