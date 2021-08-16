@@ -34,6 +34,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Roboto Mono', monospace;
 }
@@ -83,7 +84,7 @@ a:hover {
 
 .hero-text {
 	width: 300px;
-	height: 200px;
+	height: 450px;
 	text-align: left;
 	color: #fff;
 }
@@ -229,3 +230,4 @@ a:hover {
   0% {opacity:0;}
   100% {opacity:1;}
 }
+

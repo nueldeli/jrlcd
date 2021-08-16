@@ -1,23 +1,41 @@
 {% extends 'base_en.html' %}
 
+{% load static %}
+
 {% block content %}
-<div class="custom-div fade-in mt-4">
-	<br>
-	<h3 class="custom-header text-center">Activities</h3>
-	<hr>
-		<div class="row">
-			{% for activity in object_list %}
-			<div class="col-lg-6 mb4">
-				<div class="activity-div-1 shadow pt-2 pb-2">
-					<a href="{% url 'activity_detail' activity.pk %}">
-						<img class="container-fluid" src="{{ activity.activity_img.url }}">
-						<div class="container activity-div-2">
-							<h4>{{ activity.name }}</h4>
-						</div>
-					</a>
-				</div>
-			</div>
-			{% endfor %}
-		</div>
+<div class="container-fluid position-relative p-0">
+	<img class="w-100" src="{% static 'img/activity_showcase.png' %}">
+
+	<div class="carousel-caption mb-4">
+		<h1>ACTIVITIES</h1>
+		<i class="fa fa-angle-down bounce"></i>
+	</div>
 </div>
+<div class="container fade-in mt-4">
+	<br>
+	<div class="custom-div">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<hr>
+	</div>
+	<div class="row justify-content-center">
+		{% for activity in object_list %}
+		<div class="col-sm-4 mb4 hover-overlay">
+			<div class="activity-div-1 shadow pt-2 pb-2">
+				<a href="{% url 'activity_detail' activity.pk %}">
+					<img class="container-fluid" src="{{ activity.activity_img.url }}">
+					<div class="container activity-div-2">
+						<h4>{{ activity.name }}</h4>
+					</div>
+				</a>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+
 {% endblock %}

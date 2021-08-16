@@ -28,5 +28,5 @@ urlpatterns = [
     path('nursery/', include('nursery.urls')),
     path('species/', include('species.urls')),
     path('activity/', include('activity.urls')),
-    #path('publication/', include('publication.urls')),
+    path('publication/', include('publication.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
