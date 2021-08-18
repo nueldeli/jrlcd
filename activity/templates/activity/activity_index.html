@@ -14,27 +14,61 @@
 <div class="container fade-in mt-4">
 	<br>
 	<div class="custom-div">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Since its establishement, we have conducted various activities under the Forest Landscape Restoration initiatives to deliver value for our organization and to the community. Our main activities can be divided into five main areas that include planting program, seminar, wilding, nursery and official events. We are not limited to only planting trees but we also are commited to provide service and value to the local Sarawak people through our activities.</p>
+		<br>
 		<hr>
 	</div>
 	<div class="row justify-content-center">
-		{% for activity in object_list %}
-		<div class="col-sm-4 mb4 hover-overlay">
+		<div class="col-sm-4 mb-4 hover-overlay">
 			<div class="activity-div-1 shadow pt-2 pb-2">
-				<a href="{% url 'activity_detail' activity.pk %}">
-					<img class="container-fluid" src="{{ activity.activity_img.url }}">
+				<a href="{% url 'planting_index' %}">
+					<img class="container-fluid" src="{% static 'img/activity_planting.png' %}">
 					<div class="container activity-div-2">
-						<h4>{{ activity.name }}</h4>
+						<h4 class="btn btn-custom">Planting Program</h4>
 					</div>
 				</a>
 			</div>
 		</div>
-		{% endfor %}
+		<div class="col-sm-4 mb-4 hover-overlay">
+			<div class="activity-div-1 shadow pt-2 pb-2">
+				<a href="{% url 'seminar_index' %}">
+					<img class="container-fluid" src="{% static 'img/activity_seminar.png' %}">
+					<div class="container activity-div-2">
+						<h4 class="btn btn-custom">Seminar</h4>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="col-sm-4 mb-4 hover-overlay">
+			<div class="activity-div-1 shadow pt-2 pb-2">
+				<a href="{% url 'wilding_index' %}">
+					<img class="container-fluid" src="{% static 'img/activity_wilding.png' %}">
+					<div class="container activity-div-2">
+						<h4 class="btn btn-custom">Wilding Collection</h4>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="col-sm-4 mb-4 hover-overlay">
+			<div class="activity-div-1 shadow pt-2 pb-2">
+				<a href="{% url 'nursery_activity_index' %}">
+					<img class="container-fluid" src="{% static 'img/activity_nursery.png' %}">
+					<div class="container activity-div-2">
+						<h4 class="btn btn-custom">Nursery Activities</h4>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="col-sm-4 mb-4 hover-overlay">
+			<div class="activity-div-1 shadow pt-2 pb-2">
+				<a href="{% url 'official_index' %}">
+					<img class="container-fluid" src="{% static 'img/activity_official.png' %}">
+					<div class="container activity-div-2">
+						<h4 class="btn btn-custom">Official events</h4>
+					</div>
+				</a>
+			</div>
+		</div>
 	</div>
 </div>
 

@@ -1,0 +1,44 @@
+{% extends 'base_en.html' %}
+
+{% block content %}
+<br>
+<br>
+<div class="custom-div fade-in border rounded shadow mt-4 p-4">
+	<h4>2021</h4> 
+	{% if wilding_2021_index %}
+		{% for post in wilding_2021_index %}
+		<a href="{% url 'activity_detail' post.pk %}">
+			<p>{{ post.name }}</p>
+		</a>
+		{% endfor %}
+	{% else %}
+	<p>No activity yet</p>
+	{% endif %}
+
+	<br>
+	<h4>2020</h4>
+	{% if wilding_2020_index %}
+		{% for post in wilding_2020_index %}
+		<a href="{% url 'activity_detail' post.pk %}">
+			<p>{{ post.name }}</p>
+		</a>
+		{% endfor %}
+	{% else %}
+	<p>No activity yet</p>
+	{% endif %}
+
+	<br>
+	<h4>2019</h4>
+	{% if wilding_2019_index %}
+		{% for post in wilding_2019_index %}
+		<a href="{% url 'activity_detail' post.pk %}">
+			<p>{{ post.name }}</p>
+		</a>
+		{% endfor %}
+	{% else %}
+	<p>No activity yet</p>
+	{% endif %}
+
+	<br>
+</div>
+{% endblock %}
