@@ -61,7 +61,7 @@ a:hover {
 }
 
 .navbar-toggler {
-	border-color: rgba(0,0,0, 1);
+	border-color: rgba(255,255,255, 1);
 }
 
 .navbar-logo-img {
@@ -108,7 +108,7 @@ a:hover {
 	align-self: center;
 	font-size: 30px;
 	line-height: 1em;
-	color: #ff6600;
+	color: #1E6D52;
 }
 
 .hero-content {
@@ -129,12 +129,13 @@ a:hover {
 }
 
 .btn-custom {
-	background-color: #ff6600;
+	/*background-color: #ff6600;*/
+	background-color: #1E6D52;
 	color: #fff;
 }
 
 .btn-custom:hover {
-	background-color: #ffa500;
+	background-color: #70dab4;
 }
 
 .title-label {
@@ -189,6 +190,28 @@ a:hover {
 	left: 10px;
 	bottom: 50%;
 	font-size: 20px;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	left:100px;
+	background-color:#1E6D52;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	/*box-shadow: 2px 2px 3px #999;*/
+}
+
+.float:hover {
+	background-color: #70dab4;
+	color: #000;
+}
+
+.my-float{
+	margin-top:22px;
 }
 
 .bounce {

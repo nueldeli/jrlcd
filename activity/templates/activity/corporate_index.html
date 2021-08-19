@@ -5,8 +5,8 @@
 <br>
 <div class="custom-div fade-in border rounded shadow mt-4 p-4">
 	<h4>2021</h4>
-	{% if official_2021_index %}
-		{% for post in official_2021_index %}
+	{% if corporate_2021_index %}
+		{% for post in corporate_2021_index %}
 		<a href="{% url 'activity_detail' post.pk %}">
 			<p>{{ post.name }}</p>
 		</a>
@@ -17,8 +17,8 @@
 
 	<br>
 	<h4>2020</h4>
-	{% if official_2020_index %}
-		{% for post in official_2020_index %}
+	{% if corporate_2020_index %}
+		{% for post in corporate_2020_index %}
 		<a href="{% url 'activity_detail' post.pk %}">
 			<p>{{ post.name }}</p>
 		</a>
@@ -29,8 +29,8 @@
 
 	<br>
 	<h4>2019</h4>
-	{% if official_2019_index %}
-		{% for post in official_2019_index %}
+	{% if corporate_2019_index %}
+		{% for post in corporate_2019_index %}
 		<a href="{% url 'activity_detail' post.pk %}">
 			<p>{{ post.name }}</p>
 		</a>

@@ -27,18 +27,18 @@ def planting_index(request):
 			'planting_2017_index':planting_2017_index
 		})
 	
-def seminar_index(request):
-	seminar_2021_index = data_object.filter(year__icontains='2021').filter(activity_type__icontains='Seminar')
-	seminar_2020_index = data_object.filter(year__icontains='2020').filter(activity_type__icontains='Seminar')
-	seminar_2019_index = data_object.filter(year__icontains='2019').filter(activity_type__icontains='Seminar')
-	seminar_2018_index = data_object.filter(year__icontains='2018').filter(activity_type__icontains='Seminar')
-	seminar_2017_index = data_object.filter(year__icontains='2017').filter(activity_type__icontains='Seminar')
-	return render(request, 'activity/seminar_index.html', {
-			'seminar_2021_index':seminar_2021_index,
-			'seminar_2020_index':seminar_2020_index,
-			'seminar_2019_index':seminar_2019_index,
-			'seminar_2018_index':seminar_2018_index,
-			'seminar_2017_index':seminar_2017_index
+def corporate_index(request):
+	corporate_2021_index = data_object.filter(year__icontains='2021').filter(activity_type__icontains='corporate')
+	corporate_2020_index = data_object.filter(year__icontains='2020').filter(activity_type__icontains='corporate')
+	corporate_2019_index = data_object.filter(year__icontains='2019').filter(activity_type__icontains='corporate')
+	corporate_2018_index = data_object.filter(year__icontains='2018').filter(activity_type__icontains='corporate')
+	corporate_2017_index = data_object.filter(year__icontains='2017').filter(activity_type__icontains='corporate')
+	return render(request, 'activity/corporate_index.html', {
+			'corporate_2021_index':corporate_2021_index,
+			'corporate_2020_index':corporate_2020_index,
+			'corporate_2019_index':corporate_2019_index,
+			'corporate_2018_index':corporate_2018_index,
+			'corporate_2017_index':corporate_2017_index
 		})
 
 def wilding_index(request):
@@ -67,18 +67,4 @@ def nursery_index(request):
 			'nursery_2019_index':nursery_2019_index,
 			'nursery_2018_index':nursery_2018_index,
 			'nursery_2017_index':nursery_2017_index
-		})
-
-def official_index(request):
-	official_2021_index = data_object.filter(year__icontains='2021').filter(activity_type__icontains='Official')
-	official_2020_index = data_object.filter(year__icontains='2020').filter(activity_type__icontains='Official')
-	official_2019_index = data_object.filter(year__icontains='2019').filter(activity_type__icontains='Official')
-	official_2018_index = data_object.filter(year__icontains='2018').filter(activity_type__icontains='Official')
-	official_2017_index = data_object.filter(year__icontains='2017').filter(activity_type__icontains='Official')
-	return render(request, 'activity/official_index.html', {
-			'official_2021_index':official_2021_index,
-			'official_2020_index':official_2020_index,
-			'official_2019_index':official_2019_index,
-			'official_2018_index':official_2018_index,
-			'official_2017_index':official_2017_index
 		})

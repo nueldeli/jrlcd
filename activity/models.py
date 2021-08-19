@@ -12,10 +12,9 @@ YEAR_CHOICES = (
 
 ACTIVITY_CHOICES = (
 		("PLANTING", "Planting"),
-		("SEMINAR", "Seminar"),
+		("CORPORATE", "Corporate"),
 		("WILDING", "Wilding"),
 		("NURSERY", "Nursery"),
-		("OFFICIAL", "Official"),
 	)
 
 class Activity(models.Model):

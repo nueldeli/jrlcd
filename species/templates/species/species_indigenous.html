@@ -1,0 +1,16 @@
+{% extends 'base_en.html' %}
+
+{% block content %}
+<br>
+<br>
+<div class="custom-div fade-in mt-4 border rounded shadow p-4">
+	<h4>Indigenous species in Sarawak</h4>
+	<ul class="list-unstyled">
+		{% for species in indigenous_species_index %}
+		<a href="{% url 'species_detail' species.pk %}">
+			<li>{{ forloop.counter }}. {{ species.local_name }}</li>
+		</a>
+		{% endfor %}
+	</ul>
+</div>
+{% endblock %}

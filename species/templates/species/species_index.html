@@ -22,15 +22,29 @@
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		<hr>
 	</div>
-	<div class="row justify-content-center">
-		{% for species in object_list %}
-		<div class="col-sm-4 border rounded shadow m-2">
-			<a href="{% url 'species_detail' species.pk %}">
-				<img class="w-100 mt-3" src="{{ species.species_img.url }}">
-			<h3>{{ species.local_name }}</h3>
-			</a>
-		</div>
-		{% endfor %}
+	<div class="row">
+	  <div class="col-sm-6">
+	    <div class="card shadow">
+	      <div class="card-body">
+	        <h5 class="card-title">Indigenous species</h5>
+	        <hr>
+	        <img class="w-100 mb-4" src="{% static 'img/indigenous_species_main.png' %}">
+	        <p class="card-text">Indigenous species is a species that is native to Sarawak and can be easily found in Sarawak forest. It can naturally adapt to the Sarawak biodiversity. </p>
+	        <a href="{% url 'indigenous_index' %}" class="btn btn-custom">View</a>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-6">
+	    <div class="card shadow">
+	      <div class="card-body">
+	        <h5 class="card-title">Exotic species</h5>
+	        <hr>
+	        <img class="w-100 mb-4" src="{% static 'img/exotic_species_main.png' %}">
+	        <p class="card-text">Exotic species is a species that is not native to Sarawak. It is found in Sarawak mostly due to human activities. In order to adapt to Sarawak biodiversity, it requires biological modification.</p>
+	        <a href="{% url 'exotic_index' %}" class="btn btn-custom">View</a>
+	      </div>
+	    </div>
+	  </div>
 	</div>
 </div>
 {% endblock %}
