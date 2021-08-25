@@ -17,3 +17,6 @@ class ForestTypeView(TemplateView):
 
 class WdimView(TemplateView):
 	template_name = 'wdim.html'
+
+class WayForwardView(TemplateView):
+	template_name = 'way_forward.html'
