@@ -1,0 +1,41 @@
+{% extends 'base_en.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="container-fluid fade-in position-relative p-0">
+	<img class="w-100" src="{% static 'img/forest_showcase.png' %}">
+
+	<div class="carousel-caption mb-4">
+		<h1>FOREST TYPE</h1>
+		<i class="fa fa-angle-down bounce"></i>
+	</div>
+</div>
+<div class="container fade-in mt-4">
+	<br>
+	<div class="custom-div">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<hr>
+	</div>
+	<br>
+	<div class="row justify-content-center">
+		{% for forest in object_list %}
+		<div class="custom-div fade-in col-lg-3 m-2">
+			<div class="card shadow" style="width: 18rem;">
+			  <img class="card-img-top" src="{{ forest.forest_img.url }}">
+			  <div class="card-body">
+			    <h5 class="card-title">{{ forest.name }}</h5>
+			    <p class="card-text">{{ forest.description | truncatechars:100 | safe }}</p>
+			    <a href="{% url 'forest_detail' forest.pk %}" class="btn btn-custom">Read more</a>
+			  </div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+{% endblock %}

@@ -36,6 +36,9 @@ INSTALLED_APPS = [
     'species.apps.SpeciesConfig',
     'activity.apps.ActivityConfig',
     'publication.apps.PublicationConfig',
+    'forest.apps.ForestConfig',
+    'ckeditor',
+    'ckeditor_uploader',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -125,6 +128,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'jrlcd/static')]
 STATIC_URL = '/static/'
 
 # Media files 
+CKEDITOR_UPLOAD_PATH = 'uploads/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'jrlcd/media')
 MEDIA_URL = '/media/'
 

@@ -1,0 +1,14 @@
+{% extends 'base_en.html' %}
+
+{% block content %}
+<br>
+<br>
+<div class="custom-div fade-in mt-4 border rounded shadow p-4">
+	<br>
+	<h4>{{ forest.name }}</h4>
+	<br>
+	<img class="w-100" src="{{ forest.forest_img.url }}">
+	<br>
+	<p>{{ forest.description | safe }}</p>
+</div>
+{% endblock %}

@@ -12,9 +12,6 @@ class AboutView(TemplateView):
 class PartnershipView(TemplateView):
 	template_name = 'partnership.html'
 
-class ForestTypeView(TemplateView):
-	template_name = 'forest_type.html'
-
 class WdimView(TemplateView):
 	template_name = 'wdim.html'
 

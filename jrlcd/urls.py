@@ -17,19 +17,20 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from .views import HomeMainView, HomeEnView, AboutView, PartnershipView, ForestTypeView, WdimView, WayForwardView
+from .views import HomeMainView, HomeEnView, AboutView, PartnershipView, WdimView, WayForwardView
 
 urlpatterns = [
     path('', HomeMainView.as_view(), name='home_main'),
     path('home_en/', HomeEnView.as_view(), name='home_en'),
     path('about/', AboutView.as_view(), name='about'),
     path('partnership/', PartnershipView.as_view(), name='partnership'),
-    path('forest_type/', ForestTypeView.as_view(), name='forest_type'),
     path('why_does_it_matter/', WdimView.as_view(), name='wdim'),
-    path('way_forward/', WayForwardView.as_view(), name='way_forward'), 
+    path('way_forward/', WayForwardView.as_view(), name='way_forward'),
+    path('ckeditor', include('ckeditor_uploader.urls')), 
     path('admin/', admin.site.urls),
     path('nursery/', include('nursery.urls')),
     path('species/', include('species.urls')),
     path('activity/', include('activity.urls')),
     path('publication/', include('publication.urls')),
+    path('forest/', include('forest.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
