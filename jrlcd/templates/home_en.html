@@ -77,89 +77,82 @@
 		<hr>
 	</div>
 
-<div class="custom-div mt-4 fade-in">
-	<h3 class="custom-header text-center">About us</h3>
-	<p>FLR was launched by Sarawak Chief Minister Datuk Patinggi Abang Johari Tun Openg on 15 June 2019 at Sabal Agroforestry Centre. The principles behind the restoration of forest is nothing new in Sarawak as it existed as early as 1920s, through the gazettement of Totally Protected Areas (TPAs) and Permanent Forest Estates (PFEs).</p>
-	<div class="text-center">
-		<a href="{% url 'about' %}">
-			<button class="btn btn-custom">Story time</button>
-		</a>
+<div class="container">
+	<div class="row">
+	  <div class="col-sm-6 mb-4">
+	    <div class="card">
+	      <div class="card-body">
+	        <h4 class="card-title">About us</h4>
+	        <p class="card-text">FLR was launched by Sarawak Chief Minister Datuk Patinggi Abang Johari Tun Openg on 15 June 2019 at Sabal Agroforestry Centre. </p>
+	        <a href="{% url 'about' %}" class="btn btn-custom">Story time</a>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-6 mb-4">
+	    <div class="card">
+	      <div class="card-body">
+	        <h4 class="card-title">Our Forest</h4>
+	        <p class="card-text">Large part of Sarawak is made up of forest. It houses a huge volume of tropical biodiversity. There's a high amount of plant diversity due to the variety of habitats.</p>
+	        <a href="{% url 'forest_index' %}" class="btn btn-custom">Explore</a>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-6 mb-4">
+	    <div class="card">
+	      <div class="card-body">
+	        <h4 class="card-title">Our resources</h4>
+	        <p class="card-text">Nursery is important to provide optimum growing condition for germination to occur. It also ensures the right production of desired number of healthy seedlings.</p>
+	        <a href="{% url 'nursery_index' %}" class="btn btn-custom">Take a walk</a>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-6 mb-4">
+	    <div class="card">
+	      <div class="card-body">
+	        <h4 class="card-title">Species</h4>
+	        <p class="card-text">We look for indigenous and exotic species. It is to ensure we have sufficient supply of seedlings. Moreover, it is to protect and save plant genetic diversity.</p>
+	        <a href="{% url 'species_index' %}" class="btn btn-custom">Learn more</a>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-6 mb-4">
+	    <div class="card">
+	      <div class="card-body">
+	        <h4 class="card-title">Activities</h4>
+	        <p class="card-text">You can view all the planting programs that had been held throughout Sarawak. It ranges from planting program, seminar, awareness campaign, MoU Signings and more.</p>
+	        <a href="{% url 'activity_index' %}" class="btn btn-custom">See our progress</a>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-6 mb-4">
+	    <div class="card">
+	      <div class="card-body">
+	        <h4 class="card-title">Collaboration</h4>
+	        <p class="card-text">Partnership between both public and private organizations is crucial to ensure the success of forest restoration. We share the same interest and spirit towards our goal.</p>
+	        <a href="{% url 'partnership' %}" class="btn btn-custom">See who are with us</a>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-6 mb-4">
+	    <div class="card">
+	      <div class="card-body">
+	        <h4 class="card-title">The Way Forward</h4>
+	        <p class="card-text">We have  a long term plan to establish a strong presence in Sarawak restoration initiative. It comprises seven main agendas and goals that serve as our guidelines.</p>
+	        <a href="{% url 'partnership' %}" class="btn btn-custom">Our plan </a>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-6 mb-4">
+	    <div class="card">
+	      <div class="card-body">
+	        <h4 class="card-title">Publication</h4>
+	        <p class="card-text">We documented our journey, research, results and data in various form of media. We use both traditional media such as poster and digital media such as web and digital files.</p>
+	        <a href="{% url 'publication_index' %}" class="btn btn-custom">See what we've published</a>
+	      </div>
+	    </div>
+	  </div>
 	</div>
 </div>
-
-<div class="custom-div">
-	<hr>
-</div>
-
-<div class="custom-div mt-4 fade-in">
-	<h3 class="custom-header text-center">Our resources</h3>
-	<p>Nursery is important to provide optimum growing condition for germination to occur. It also ensure the right production of desired number of seedlings that is healthy.</p>
-	<div class="text-center">
-		<a href="{% url 'nursery_index' %}">
-			<button class="btn btn-custom">Take a walk</button>
-		</a>
-	</div>
-</div>
-
-<div class="custom-div">
-	<hr>
-</div>
-
-<div class="custom-div mt-4 fade-in">
-	<h3 class="custom-header text-center">Species</h3>
-	<p>We look for indigenous and exotic species. It is to ensure we have sufficient supply of seedlings. Moreover, it is to protect and save plant genetic diversity.</p>
-	<div class="text-center">
-		<a href="{% url 'species_index' %}">
-			<button class="btn btn-custom">Learn more</button>
-		</a>
-	</div>
-</div>
-
-<div class="custom-div">
-	<hr>
-</div>
-
-<div class="custom-div mt-4 fade-in">
-	<h3 class="custom-header text-center">Activities</h3>
-	<p>You can view all the planting programs that had been held throughout Sarawak. It ranges from planting program, seminar, awareness campaign, MoU Signings and more.</p>
-	<div class="text-center">
-		<a href="{% url 'activity_index' %}">
-			<button class="btn btn-custom">See our progress</button>
-		</a>
-	</div>
-</div>
-
-<div class="custom-div">
-	<hr>
-</div>
-
-<div class="custom-div mt-4 fade-in">
-	<h3 class="custom-header text-center">Partnership</h3>
-	<p>Partnership between both public and private organizations is crucial to ensure the success of forest restoration. For some organizations, Memorandum of Understanding (MoU) commemorates the partnership. For others, the partnership embodies collaboration for planting programs, data sharing, solving the same issues and having mutual understanding and interest.</p>
-	<div class="text-center">
-		<a href="{% url 'partnership' %}">
-			<button class="btn btn-custom">See who are with us</button>
-		</a>
-	</div>
-</div>
-
-<div class="custom-div">
-	<hr>
-</div>
-
-<div class="custom-div mt-4 fade-in">
-	<h3 class="custom-header text-center">Publications</h3>
-	<p>We documented our journey, research, results and data in various form of media. We use both traditional media such as poster and digital media such as web and digital files.</p>
-	<div class="text-center">
-		<a href="{% url 'publication_index' %}">
-			<button class="btn btn-custom">See what we've published</button>
-		</a>
-	</div>
-</div>
-
-<!--<div class="custom-div text-center" style="margin-top: 100px;">
-	<img src="{% static 'img/engkabang.png' %}">
-</div>-->
 
 <div style="height: 100px;">
 	<!--Empty stuff-->
