@@ -12,6 +12,7 @@ class Species(models.Model):
 	local_name = models.CharField(max_length=100)
 	species_type = models.CharField(max_length=50, choices=TYPE_CHOICES, default='INDIGENOUS')
 	species_img = models.ImageField('Species Image', null=True, blank=True, upload_to='species_img')
+	species_thumbnail = models.ImageField('Species thumbnail', null=True, blank=True, upload_to='species_thumbnail')
 
 	class Meta:
 		ordering = ['-date_input']
