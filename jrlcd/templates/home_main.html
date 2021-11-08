@@ -26,7 +26,7 @@
 		<div class="home-main-div">
 		<div class="custom-div">
 			<div class="text-center mt-4 mb-4">
-				<img class="container-fluid" src="{% static 'img/flr_logo_outline_white.png' %}" style="width: 40%; height: auto;">
+				<img class="container-fluid" src="{% static 'img/flr_logo_outline_white.png' %}" style="width: 20%; height: auto;">
 			</div>
 			<div class="text-center mb-4" style="color: #fff;">
 				<h1>Pilih bahasa anda</h1>
@@ -34,7 +34,9 @@
 			</div>
 			<div class="row text-center">
 				<div class="col">
-					<button class="btn btn-custom">Bahasa Malaysia</button>
+					<a href="{% url 'home_bm' %}">
+						<button class="btn btn-custom">Bahasa Malaysia</button>
+					</a>
 				</div>
 				<div class="col">
 					<a href="{% url 'home_en' %}">

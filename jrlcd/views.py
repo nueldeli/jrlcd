@@ -6,6 +6,9 @@ from django.views.generic import TemplateView
 class HomeEnView(TemplateView):
 	template_name = 'home_en.html'
 
+#class HomeBmView(TemplateView):
+	#template_name = 'home_bm.html'
+
 class AboutView(TemplateView):
 	template_name = 'about.html'
 

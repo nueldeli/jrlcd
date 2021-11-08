@@ -1,4 +1,4 @@
-{% extends 'base_en.html' %}
+{% extends 'base_bm.html' %}
 
 {% load static %}
 
@@ -6,9 +6,9 @@
 <div class="hero-image position-relative fade-in">
 	<div class="hero-text text-center">
 		<img class="w-50 mb-2" src="{% static 'img/flr_logo_outline_white.png' %}">
-		<h1 class="hero-header">GREENING SARAWAK</h1>
+		<h1 class="hero-header">PENGHIJAUAN SARAWAK</h1>
 		<hr style="background-color: #fff;">
-		<p class="hero-content">Forest Department Sarawak</p>
+		<p class="hero-content">Jabatan Hutan Sarawak</p>
 		<div class="carousel-caption">
 			<i class="fa fa-angle-down bounce"></i>
 		</div>
@@ -23,10 +23,10 @@
 					<img class="w-100" src="{% static 'img/cm.png' %}">
 				</div>
 				<div class="col-sm-6">
-					<h2>Sarawak Government Commitment</h2>
+					<h2>Komitmen Kerajaan Sarawak</h2>
 					<br>
-					<p>Sarawak Chief Minister, The Right Honourable Datuk Patinggi (Dr) Abang Zohari bin Tun Datuk Abang Haji Openg announced that forest restoration is one of the main agenda of the state government for coming years.</p> 
-					<p>The sole purpose is to enrich the logged-over areas, especially permanent forest estates with high value timber species. Forest restoration is crucial as it keeps the forest alive and ensuring the overall ecosystem can carry its natural functions. Furthermore, it is to ensure that our forest can have sufficient and sustainable timber production.</p>
+					<p>Ketua Menteri Sarawak, Yang Amat Berhormat Datuk Patinggi (Dr) Abang Zohari bin Tun Datuk Abang Haji Openg.</p> 
+					<p>Tujuan utama aadalah untuk memperkayakan kawasan bekas pembalakan, terutamanya kawasan hutan simpan kekal yangn mempunyai spesies kayu bernilai. Restorasi hutan adalah penting untk memastikan hutan terus berkekalan dan ekosistem dapat berfungsi. Selain daripada itu, ia adalah untuk memastikan kita mempunyai bekalan kayu yang cukup dan mapan.</p>
 					<!--<a class="btn btn-custom" href="https://www.malaymail.com/news/malaysia/2019/03/07/forest-restoration-a-major-agenda-for-sarawak-cm-says/1730036" target="_blank">Learn More</a>-->
 				</div>
 			</div>
@@ -38,10 +38,10 @@
 		<div class="container-fluid p-4 border rounded shadow">
 			<div class="row">
 				<div class="col-sm-6">
-					<h2>Forest Department Sarawak</h2>
+					<h2>Jabatan Hutan Sarawak</h2>
 					<br>
 					<br>
-					<p>Director of Forest Department Sarawak, Ybhg Datu Hamden Bin Haji Mohammad, said this effort will balance out and reduce the impacts from the exploration of forest for development projects and help tackle the global climate crisis. Each tree planted is a voice for change, a monument to healing our planet and a message that we can do things differently.</p>
+					<p>Pengarah Jabatan Hutan Sarawak, Ybhg Datu Hamden Bin Haji Mohammad, berkata usaha restorasi hutan ini akan memberi keseimbangan dan mengurangkan kesan eksplorasi hutan hsail daripada pembanguna. Ia juga akan turut dapat mengurangkan kesan perubahan iklim. Setiap pokok yang ditanam adalah suara untuk perubahan, satu monumen dan simbol untuk pemulihan Bumi dan mesej yang membuktikan kita mampu mengubah cara kita.</p>
 				</div>
 				<div class="col-sm-6">
 					<img class="w-100" src="{% static 'img/df.png' %}">
@@ -55,11 +55,11 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-8">
-					<h2>Our Goals</h2>
-					<p>1. To restore and rehabilitate degraded forest in PFE, TPA and state-land forest</p>
-					<p>2. To enrich logged-over areas with high value timber species especially on degraded areas</p>
-					<p>3. To elevate livelihood of forest dependent communities</p>
-					<p>4. To reduce pressure on natural forest by shifting timber production towards plantation of commercial and fast-growing species</p>
+					<h2>Matlamat Kami</h2>
+					<p>1. Untuk mengembalikan dan memulihkan kawasan hutan simpan kekal, kawasan hutan terlindung sepenuhnya dan hutan kerajaan.</p>
+					<p>2. Untuk memperkayakan kawasan bekas pembalakan dengan spesies bernilai</p>
+					<p>3. Untuk menaiktaraf tahap kehidupan komuniti yang bergantung dengan hutan</p>
+					<p>4. Untuk mengurangkan tekanan terhadap hutan dengan menumpukan hasil hutan kepada penanaman hutan komersial dengan spesies cepat tumbuh</p>
 					<div class="pt-4">
 						<a class="btn btn-custom" href="{% url 'wdim' %}">Why does it matter?</a>
 					</div>
@@ -82,44 +82,44 @@
 	  <div class="col-sm-6 mb-4">
 	    <div class="card">
 	      <div class="card-body">
-	        <h4 class="card-title">About us</h4>
-	        <p class="card-text">FLR was launched by Sarawak Chief Minister Datuk Patinggi Abang Johari Tun Openg on 15 June 2019 at Sabal Agroforestry Centre. </p>
-	        <a href="{% url 'about' %}" class="btn btn-custom">Story time</a>
+	        <h4 class="card-title">Berkaitan kami</h4>
+	        <p class="card-text">Restorasi Landskap Hutan telah dilancarkan oleh Yang Amat Berhormat Datuk Patinggi (Dr) Abang Zohari bin Tun Datuk Abang Haji Openg pada 15 Jun 2019 di Hutan Simpan Sabal</p>
+	        <a href="{% url 'about' %}" class="btn btn-custom">Cerita kami</a>
 	      </div>
 	    </div>
 	  </div>
 	  <div class="col-sm-6 mb-4">
 	    <div class="card">
 	      <div class="card-body">
-	        <h4 class="card-title">Our Forest</h4>
-	        <p class="card-text">Large part of Sarawak is made up of forest. It houses a huge volume of tropical biodiversity. There's a high amount of plant diversity due to the variety of habitats.</p>
-	        <a href="{% url 'forest_index' %}" class="btn btn-custom">Explore</a>
+	        <h4 class="card-title">Hutan Kita</h4>
+	        <p class="card-text">Sebahagian besar daripada kawasan Sarawak adalah terdiri daripada hutan. Ia menempatkan sejumlah besar kepelbagaian biologi tropika. Hutan Sarawak juga mempunyai kepelbagaian flora kerana Sarawak mempunyai pelbagai jenis habitat.</p>
+	        <a href="{% url 'forest_index' %}" class="btn btn-custom">Teroka</a>
 	      </div>
 	    </div>
 	  </div>
 	  <div class="col-sm-6 mb-4">
 	    <div class="card">
 	      <div class="card-body">
-	        <h4 class="card-title">Our resources</h4>
-	        <p class="card-text">Nursery is important to provide optimum growing condition for germination to occur. It also ensures the right production of desired number of healthy seedlings.</p>
-	        <a href="{% url 'nursery_index' %}" class="btn btn-custom">Take a walk</a>
+	        <h4 class="card-title">Sumber kami</h4>
+	        <p class="card-text">Nurseri adalah penting untuk  menyediakan keadaan yang optimum untuk pertumbuhan biji benih. Ia juga adalah untuk memastikan jumlah maksimum biji benih sihat yang dapat dibekalkan.</p>
+	        <a href="{% url 'nursery_index' %}" class="btn btn-custom">Ikuti kami</a>
 	      </div>
 	    </div>
 	  </div>
 	  <div class="col-sm-6 mb-4">
 	    <div class="card">
 	      <div class="card-body">
-	        <h4 class="card-title">Species</h4>
-	        <p class="card-text">We look for indigenous and exotic species. It is to ensure we have sufficient supply of seedlings. Moreover, it is to protect and save plant genetic diversity.</p>
-	        <a href="{% url 'species_index' %}" class="btn btn-custom">Learn more</a>
+	        <h4 class="card-title">Spesies</h4>
+	        <p class="card-text">Kami mengumpul spesies asal dan spesies eksotik. ia adalah untuk memastikan kita mempunyai bekalan biji benih yang mencukupi. Selain itu, ia adalah untuk melindungi kepelbagaian genetik tumbuhan.</p>
+	        <a href="{% url 'species_index' %}" class="btn btn-custom">Ketahui lebih lanjut</a>
 	      </div>
 	    </div>
 	  </div>
 	  <div class="col-sm-6 mb-4">
 	    <div class="card">
 	      <div class="card-body">
-	        <h4 class="card-title">Activities</h4>
-	        <p class="card-text">You can view all the activities that had been held throughout Sarawak. It ranges from planting program, seminar, awareness campaign, MoU Signings and more.</p>
+	        <h4 class="card-title">Activiti</h4>
+	        <p class="card-text">Anda boleh melihat semua aktiviti yang telah diadakan di Sarawak. Ia merangkumi program penanaman, seminar, kempen kesedaran, menandatangani memorandum kesefahaman dan banyak lagi.</p>
 	        <a href="{% url 'activity_index' %}" class="btn btn-custom">See our progress</a>
 	      </div>
 	    </div>
@@ -127,7 +127,7 @@
 	  <div class="col-sm-6 mb-4">
 	    <div class="card">
 	      <div class="card-body">
-	        <h4 class="card-title">Collaboration</h4>
+	        <h4 class="card-title">Kolaborasi</h4>
 	        <p class="card-text">Partnership between both public and private organizations is crucial to ensure the success of forest restoration. We share the same interest and spirit towards our goal.</p>
 	        <a href="{% url 'partnership' %}" class="btn btn-custom">See who are with us</a>
 	      </div>

@@ -26,7 +26,7 @@
 </head>
 <body>
 
-	<nav class="navbar fixed-bottom navbar-expand-lg navbar-custom">
+	<nav class="navbar fixed-bottom navbar-expand navbar-custom">
 		<a class="navbar-brand" id="navbar-name" href="">
 			<!--<img class="navbar-logo-img" src="{% static 'img/ad03_logo.png' %}">-->
 		</a>
@@ -39,50 +39,54 @@
 				<br>
 				<li class="nav-item">
 					<a class="nav-link" href="{% url 'home_en' %}">
-						<button class="btn btn-custom shadow">Home</button>
+						<button class="btn btn-custom shadow">Utama</button>
 					</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="{% url 'about' %}">
-						<button class="btn btn-custom shadow">Our Story</button>
+						<button class="btn btn-custom shadow">Cerita Kami</button>
 					</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="{% url 'forest_index' %}">
-						<button class="btn btn-custom shadow">Forest Type</button>
+						<button class="btn btn-custom shadow">Jenis Hutan</button>
 					</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="{% url 'nursery_index' %}">
-						<button class="btn btn-custom shadow">Nursery</button>
+						<button class="btn btn-custom shadow">Nurseri</button>
 					</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="{% url 'species_index' %}">
-						<button class="btn btn-custom shadow">Species</button>
+						<button class="btn btn-custom shadow">Spesies</button>
 					</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="{% url 'activity_index' %}">
-						<button class="btn btn-custom shadow">Activities</button>
+						<button class="btn btn-custom shadow">Activiti</button>
 					</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="{% url 'partnership' %}">
-						<button class="btn btn-custom shadow">Collaboration</button>
+						<button class="btn btn-custom shadow">Kolaborasi</button>
 					</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="{% url 'way_forward' %}">
-						<button class="btn btn-custom shadow">Way Forward</button>
+						<button class="btn btn-custom shadow">Arah hadapan</button>
 					</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="{% url 'publication_index' %}">
-						<button class="btn btn-custom shadow">Publication</button>
+						<button class="btn btn-custom shadow">Penerbitan</button>
 					</a>
 				</li>
-				
+				<!--<li class="nav-item">
+					<a class="nav-link" href="{% url 'home_main' %}">
+						<button class="btn btn-custom shadow">Bahasa</button>
+					</a>
+				</li>-->
 				<li class="nav-item">
 					<a href="{{ request.META.HTTP_REFERER }}" class="float">
 						<i class="fa fa-arrow-left my-float"></i>
